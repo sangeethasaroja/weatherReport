@@ -44,7 +44,6 @@ const WeatherReport = () => {
 			</section>
 			{report==null&&pending&&<h1 className="pending">lodaing.... please wait</h1>}
             {report && <div className="info">
-			<div>{report.current.temperature>30?<i class='bx bxs-sun bx-burst bx-rotate-180' ></i>:<i class='bx bxs-cloud-rain'   ></i>}</div>
 			<h1>Weather Report on {place.current.value}</h1>
 			{/* <h2>{country&& country.map((m)=>{return(<h2>Country:{m.country}
 			
